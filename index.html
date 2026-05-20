@@ -141,7 +141,7 @@
 <script>
     // ==========  ⚠️ 这里需要你修改！ ⚠️  ==========
     // 1. 替换成你在 ModelScope 获取的真实 API Key
-    const MODEL_SCOPE_API_KEY = "ms-6c3c4ad6-5ab1-49db-8af3-7dec4bf1f3ca";
+    const MODEL_SCOPE_API_KEY = "ms-239d774d-4d58-4ef1-9c49-6453844a5c7e";
     // 2. 选择要调用的模型名称 (SenseVoiceSmall)
     const MODEL_NAME = "iic/SenseVoiceSmall";
     // 3. 服务端点（一般不需要改，但如果官方有变动请留意）
@@ -238,7 +238,7 @@
     // ---------- ❤️ 核心：调用 ModelScope API 进行情绪识别 ❤️ ----------
     async function sendAudioToAPI() {
         // 检查 API Key 是否已配置
-        if (!MODEL_SCOPE_API_KEY || MODEL_SCOPE_API_KEY === "ms-6c3c4ad6-5ab1-49db-8af3-7dec4bf1f3ca") {
+        if (!MODEL_SCOPE_API_KEY || MODEL_SCOPE_API_KEY === "ms-239d774d-4d58-4ef1-9c49-6453844a5c7e") {
             showStatus("⚠️ 请先在第 1 步的代码里填入真实的 ModelScope API Key");
             return;
         }
