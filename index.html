@@ -236,12 +236,7 @@
     });
 
     // ---------- ❤️ 核心：调用 ModelScope API 进行情绪识别 ❤️ ----------
-    async function sendAudioToAPI() {
-        // 检查 API Key 是否已配置
-        if (!MODEL_SCOPE_API_KEY || MODEL_SCOPE_API_KEY === "ms-239d774d-4d58-4ef1-9c49-6453844a5c7e") {
-            showStatus("⚠️ 请先在第 1 步的代码里填入真实的 ModelScope API Key");
-            return;
-        }
+   
 
         const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
         const formData = new FormData();
